@@ -1,1 +1,1 @@
-Grabs sunlight, temperature and humidity data from OpenWeatherMap.org
+Grabs weather data from OpenWeatherMap.org
