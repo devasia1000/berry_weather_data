@@ -1,4 +1,5 @@
 import urllib2
+import json
 
 # WARNING: this class is slow. Use sparingly!
 
@@ -21,5 +22,14 @@ class WeatherData:
         # print out result
         print result
 
+        # parse the JSON result
+        data = json.loads(result)
+
+        # get relevant data from JSON string
+        temperature = data["main"]["temp"]
+        humidity = data["main"]["humidity"];
+
+        print temperature, humidity
+
 # used to test our class        
-data = WeatherData(12.3, 56.32)
+weather_data = WeatherData(12.3, 56.32)
