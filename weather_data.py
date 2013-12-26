@@ -58,7 +58,3 @@ class WeatherData:
     def getAllJSONData(self):
 
         return self.data
-
-# used to test our class        
-weather_data = WeatherData(12.3, 56.32)
-print weather_data.getCloudCover(), weather_data.getTemperature(), weather_data.getHumidity(), weather_data.getAllJSONData()
